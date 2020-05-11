@@ -1,0 +1,23 @@
+package study;
+
+import java.util.Scanner;
+
+public class work {
+
+	public static void main(String[] args) {
+		double[] cash = new double[5];
+		double sum = 0.0;
+		System.out.println("请输入本会员的消费记录");
+		Scanner input = new Scanner(System.in);
+		for(int i=0;i<cash.length;i++) {
+			System.out.println("请输入第"+(i+1)+"笔购物");
+			cash[i]=input.nextDouble();
+			sum = sum+cash[i];
+		}
+		System.out.println("序号\t\t金额（元）");
+		for(int i = 0;i<cash.length;i++) {
+			System.out.println(i+"\t\t"+cash[i]);
+		}
+	}
+
+}
